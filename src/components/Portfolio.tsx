@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Linkedin, Mail, Code, Briefcase, User, MapPin } from 'lucide-react';
+import Image from "next/image";
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -72,8 +73,14 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="mb-8">
-                <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-gray-300 dark:to-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <User size={48} className="text-white dark:text-gray-800" />
+                <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-gray-300 dark:to-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="profile.jpg"
+                    alt="Profile"
+                    width={180}
+                    height={180}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h1 className="text-5xl font-bold mb-4 leading-tight bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
                   YongHun Byun
