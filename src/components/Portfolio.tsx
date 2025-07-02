@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { Moon, Sun, Github, Linkedin, Mail, ExternalLink, Code, Briefcase, User, MapPin } from 'lucide-react';
+import { Moon, Sun, Github, Linkedin, Mail, Code, Briefcase, User, MapPin } from 'lucide-react';
 
-export default function Portfolio(): JSX.Element {
+export default function Portfolio() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
