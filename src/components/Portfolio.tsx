@@ -75,7 +75,7 @@ export default function Portfolio() {
                 <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-gray-300 dark:to-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center">
                   <User size={48} className="text-white dark:text-gray-800" />
                 </div>
-                <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+                <h1 className="text-5xl font-bold mb-4 leading-tight bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
                   YongHun Byun
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-2">Web Developer</p>
