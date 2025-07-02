@@ -82,7 +82,7 @@ export default function Portfolio() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h1 className="text-5xl font-bold mb-4 leading-tight bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+                <h1 className="text-5xl font-bold mb-4 leading-tight bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent max-sm:text-3xl max-sm:mb-2">
                   YongHun Byun
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-2">Web Developer</p>
