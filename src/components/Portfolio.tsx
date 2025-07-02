@@ -75,7 +75,7 @@ export default function Portfolio() {
               <div className="mb-8">
                 <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-gray-300 dark:to-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
                   <Image
-                    src="profile.jpg"
+                    src="profile2.png"
                     alt="Profile"
                     width={180}
                     height={180}
