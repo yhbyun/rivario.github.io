@@ -34,6 +34,15 @@ export default function Portfolio() {
     setDarkMode(!darkMode);
   };
 
+  // Smooth scroll handler
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const skills: string[] = [
     "Laravel Framework", "PHP", "JavaScript", "MySQL", "Docker", "Git", "RESTful APIs"
   ];
@@ -46,8 +55,8 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 className="text-xl font-bold">rivario.com</h1>
             <div className="flex items-center space-x-6">
-              <a href="#about" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">About</a>
-              <a href="#contact" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Contact</a>
+              <a href="#about" onClick={e => handleNavClick(e, 'about')} className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">About</a>
+              <a href="#contact" onClick={e => handleNavClick(e, 'contact')} className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Contact</a>
               <button
                 onClick={toggleDarkMode}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -118,7 +127,7 @@ export default function Portfolio() {
                   at Exporum, where I work on exciting projects that challenge me to grow as a developer every day.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="#contact" className="bg-gray-800 hover:bg-gray-900 dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-gray-100 text-white px-6 py-3 rounded-lg transition-colors">
+                  <a href="#contact" onClick={e => handleNavClick(e, 'contact')} className="bg-gray-800 hover:bg-gray-900 dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-gray-100 text-white px-6 py-3 rounded-lg transition-colors">
                     Get In Touch
                   </a>
                 </div>
